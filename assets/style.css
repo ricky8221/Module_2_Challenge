@@ -1,0 +1,58 @@
+*{
+    font-family: sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #13293d;
+    color: #fff;
+  }
+  /* formating size for the  major part of the website */
+  main{
+    width: 96%;
+    margin: 2rem auto;
+  }
+  footer {
+    margin: 1.5rem;
+    text-align: center;
+  }
+
+  h1{
+    font-size: 300%;
+  }
+  h2{
+    text-align: center;
+    margin: 10px;
+    font-size: 200%;
+  }
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    min-width: 300px;
+}
+
+nav a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover{
+    font-size: larger;
+}
+.portfolio{
+
+}
+div{
+    border: 5px solid green;
+    width: 33.33%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+footer a{
+    margin: 5px;
+    font-size: medium;
+}
