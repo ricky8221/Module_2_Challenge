@@ -1,24 +1,34 @@
 *{
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: #13293d;
-    color: #fff;
+    background-color: #588157;
+    color: #dad7cd;
   }
   /* formating size for the  major part of the website */
+  body{
+    background-color: #344e41;
+  }
   main{
     width: 96%;
     margin: 2rem auto;
+    
   }
   footer {
     margin: 1.5rem;
+    padding: 5%;
     text-align: center;
+    color: #dad7cd;
+  }
+  footer a{
+    color: #dad7cd;
   }
 
+  /* text present for the subtitle */
   h1{
     font-size: 300%;
   }
@@ -26,7 +36,13 @@ header {
     text-align: center;
     margin: 10px;
     font-size: 200%;
+    color: #dad7cd;
   }
+  p{
+    color: #dad7cd;
+  }
+
+  /* top right nav bar text */
 nav ul{
     display: flex;
     justify-content: space-around;
@@ -34,25 +50,82 @@ nav ul{
 }
 
 nav a{
-    color: #fff;
+    color: #dad7cd;
     font-weight: bold;
     text-decoration: none;
 }
 
+/* nav bar hover effect */
 nav a:hover{
+   transition: 1s;
     font-size: larger;
 }
-.portfolio{
 
+/* profolio part */
+.portfolioBody{
+  margin: 2%;
+ border: 3px #ffe882;
+ border-style: inset;
+ box-shadow: 2px 3px 5px #ffe882;
+ margin: 5% 2%;
+ padding: 2%;
+ position: relative;
 }
-div{
-    border: 5px solid green;
-    width: 33.33%;
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
+.avatar img{
+  width: 30%;
+  position:relative ;
+  left: 33%;
+  margin: 2%;
 }
-footer a{
-    margin: 5px;
-    font-size: medium;
+
+/* resume part */
+.resume{
+  padding: 2%;
+  margin: 5% 2%;
+}
+
+
+/* work part */
+.workCard{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row ;
+  justify-content: center;
+  margin: 2%;
+}
+
+.workDemo{
+  margin: 2%;
+  border: 5px;
+  width: 29%;
+  height:auto;
+  transition: 1s;
+}
+.workDemo p{
+  text-align: center;
+  margin: 20px;
+}
+.workDemo img{
+max-width: 90%;
+margin: 10%;
+transition: 1s;
+}
+
+/* work hyperlink portal hover effect */
+.work img:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+
+/* display when in mobile divice @ 768px */
+@media screen and (min-width: 768px) {
+  .workDemo {
+    width: 40%;
+  }
+}
+/* display when in larger screen @ 992px */
+@media screen and (min-width: 992px) {
+  .workDemo {
+    width: 29%;
+  }
 }
