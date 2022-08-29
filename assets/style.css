@@ -86,6 +86,7 @@ nav a:hover{
   margin: 5% 2%;
   border: 5px grey;
   background-image: linear-gradient(to top, #5e9410, #6aa211, #77b012, #85bf12, #93cd12);
+}
 
 /* work part */
 .workCard{
